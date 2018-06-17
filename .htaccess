@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond $1 !^(favicon\.*|index\.*)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://nijojob.heliohost.org/MyApp/index.php/$1 [L]
